@@ -16,3 +16,8 @@ coffee_ratings <- readr::read_csv('https://raw.githubusercontent.com/rfordatasci
 
 ggplot(data = coffee_ratings) + 
   geom_point(mapping = aes(x = balance, y = total_cup_points, color = country_of_origin))
+
+
+ggplot(data = coffee_ratings) + 
+  geom_point(mapping = aes(x = aroma, y = total_cup_points, color = country_of_origin))
+
