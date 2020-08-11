@@ -23,3 +23,8 @@ graf_aroma <- ggplot(data = coffee_ratings) +
   geom_point(mapping = aes(x = aroma, y = total_cup_points, color = country_of_origin), show.legend = FALSE)
 
 ggplotly(graf_aroma, tooltip = c("country_of_origin", "aroma"))
+
+# Oi testando 
+
+
+
