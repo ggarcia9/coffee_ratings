@@ -13,6 +13,8 @@ library(lubridate)
 library(gganimate)
 library(plotly)
 
+install.packages("plotly")
+
 coffee_ratings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv')
 
 ggplot(data = coffee_ratings) + 
@@ -25,6 +27,7 @@ graf_aroma <- ggplot(data = coffee_ratings) +
 ggplotly(graf_aroma, tooltip = c("country_of_origin", "aroma"))
 
 # Oi testando 
+
 
 
 
